@@ -35,7 +35,7 @@ def  lemur(branches):
     elif 1 < len(branches) <= 3:
         counter = 1
     else:
-        for i in range(0,len(branches)-2): # i is index; we're checking every other
+        for i in range(0,len(branches)-2, 2): # i is index; we're checking every other
             if branches[i + 2] == 0:
                 counter += 1
                 i += 2
