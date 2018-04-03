@@ -27,17 +27,17 @@ new_tree.insert_left(0)
 new_tree.insert_right(4)
 
 # MY IMPLEMENTATION
-def get_height(new_tree, left_counter=0, right_counter=0):
-    if not new_tree.left and not new_tree.right: #if both left & right nodes have no more children
-        return max(left_counter,right_counter)
-    if new_tree.left: # if left node has children
-        left_counter += 1
-        print "LEFT COUNTER IS " + str(left_counter)
-        return get_height(new_tree.left, left_counter, right_counter) # don't need return
-    if new_tree.right: # if right node has children
-        right_counter += 1
-        print "RIGHT COUNTER IS " + str(left_counter)
-        return get_height(new_tree.right, left_counter, right_counter)
+# def get_height(new_tree, left_counter=0, right_counter=0):
+#     if not new_tree.left and not new_tree.right: #if both left & right nodes have no more children
+#         return max(left_counter,right_counter)
+#     if new_tree.left: # if left node has children
+#         left_counter += 1
+#         print "LEFT COUNTER IS " + str(left_counter)
+#         return get_height(new_tree.left, left_counter, right_counter) # don't need return?
+#     if new_tree.right: # if right node has children
+#         right_counter += 1
+#         print "RIGHT COUNTER IS " + str(left_counter)
+#         return get_height(new_tree.right, left_counter, right_counter)
 
 # RUBY'S IMPLEMENTATION
 def get_height(node):
